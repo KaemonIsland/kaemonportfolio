@@ -1,0 +1,7 @@
+<%= image_tag @portfolio.main_image unless @portfolio.main_image.nil? %>
+
+<h1><%= @portfolio.title %></h1>
+<h3><%= @portfolio.subtitle %></h3>
+<p><%= @portfolio.body %></p>
+<%= link_to "Update Portfolio", edit_portfolio_path(@portfolio) %>
+<%= link_to "Back", portfolios_path %>

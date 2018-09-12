@@ -3,7 +3,7 @@
 <%= link_to "Home", home_path %>
 <%= link_to "Create new Portfolio", new_portfolio_path %>
 <% @portfolio.each do |portfolio| %>
-  <h2><%= portfolio.title %></h2>
+  <h2><%= link_to portfolio.title, portfolio %></h2>
   <h3><%= portfolio.subtitle %></h3>
   <p><%= portfolio.body %></p>
   <%= link_to "Update Portfolio", edit_portfolio_path(portfolio) %>
