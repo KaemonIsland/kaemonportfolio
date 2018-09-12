@@ -1,0 +1,9 @@
+<h1>Portfolio Items</h1>
+
+<%= link_to "Home", home_path %>
+<% @portfolio_items.each do |portfolio| %>
+  <h2><%= portfolio.title %></h2>
+  <h3><%= portfolio.subtitle %></h3>
+  <p><%= portfolio.body %></p>
+  <%= image_tag portfolio.main_image %>
+<% end %>
