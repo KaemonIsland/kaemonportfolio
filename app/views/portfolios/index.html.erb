@@ -1,8 +1,7 @@
 <h1>Portfolio Items</h1>
 
 <%= link_to "Home", home_path %>
-<%= link_to "New Portfolio", new_portfolio_path %>
-<%= link_to "Update Portfolio" %>
+<%= link_to "Create new Portfolio", new_portfolio_path %>
 <% @portfolio.each do |portfolio| %>
   <h2><%= portfolio.title %></h2>
   <h3><%= portfolio.subtitle %></h3>
