@@ -39,6 +39,10 @@ class PortfoliosController < ApplicationController
 end
 
   def destroy
+    Portfolio.find(params[:id]).destroy
+    respond_to do |format|
+      format.html { redirect_to portfolios_path, notice: "Portfolio was deleted." }
+    end
   end
 
   private

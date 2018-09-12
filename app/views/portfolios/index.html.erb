@@ -7,5 +7,6 @@
   <h3><%= portfolio.subtitle %></h3>
   <p><%= portfolio.body %></p>
   <%= link_to "Update Portfolio", edit_portfolio_path(portfolio) %>
+  <%= link_to "Delete Portfolio", portfolio, method: :delete, data: { confirm: "Are you sure?" } %>
   <%= image_tag portfolio.thumb_image unless portfolio.thumb_image.nil? %>
 <% end %>
